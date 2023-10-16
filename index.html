@@ -2,40 +2,42 @@
 <html lang="en">
 <title>Add Snippets</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
 <style>
     textarea {
-        height: 200px;
+        height: 150px;
+    }
+
+    form {
+        width: 75%;
+        margin: auto;
     }
 </style>
 
 <body>
-    <div class="w3-card-4">
-        <div class="w3-container w3-brown">
-            <h2>Code Snippet</h2>
-        </div>
-        <form class="w3-container">
-            <label class="w3-text-brown" for="language"><b>Language</b></label>
-            <input id="language" class="w3-input w3-border w3-sand w3-margin-bottom" name="language" type="text"
-                placeholder="Enter language">
-
-            <label class="w3-text-brown" for="category"><b>Category</b></label>
-            <input id="category" class="w3-input w3-border w3-sand w3-margin-bottom" name="category" type="text"
-                placeholder="Enter category">
-
-            <label class="w3-text-brown" for="title"><b>Title</b></label>
-            <input id="title" class="w3-input w3-border w3-sand w3-margin-bottom" name="title" type="text"
-                placeholder="Enter title">
-
-            <label class="w3-text-brown" for="code"><b>Code</b></label>
-            <textarea id="code" class="w3-input w3-border w3-sand w3-margin-bottom" name="code" type="text"> </textarea>
-
-            <label class="w3-text-brown" for="additional-info"><b>Additional Information</b></label>
-            <textarea id="additional-info" class="w3-input w3-border w3-sand w3-margin-bottom" name="additional-info"
-                type="text" placeholder="Enter additional information"> </textarea>
-            <button class="w3-btn w3-brown" type="submit">Save</button>
-        </form>
+    <div class="w3-container w3-brown">
+        <h2>Code Snippet</h2>
     </div>
+    <form class="w3-container">
+        <label class="w3-text-brown" for="language"><b>Language</b></label>
+        <input id="language" class="w3-input w3-border w3-sand w3-margin-bottom" name="language" type="text"
+            placeholder="Enter language">
+
+        <label class="w3-text-brown" for="category"><b>Category</b></label>
+        <input id="category" class="w3-input w3-border w3-sand w3-margin-bottom" name="category" type="text"
+            placeholder="Enter category">
+
+        <label class="w3-text-brown" for="title"><b>Title</b></label>
+        <input id="title" class="w3-input w3-border w3-sand w3-margin-bottom" name="title" type="text"
+            placeholder="Enter title">
+
+        <label class="w3-text-brown" for="code"><b>Code</b></label>
+        <textarea id="code" class="w3-input w3-border w3-sand w3-margin-bottom" name="code" type="text"> </textarea>
+
+        <label class="w3-text-brown" for="additional-info"><b>Additional Information</b></label>
+        <textarea id="additional-info" class="w3-input w3-border w3-sand w3-margin-bottom" name="additional-info"
+            type="text" placeholder="Enter additional information"> </textarea>
+        <button class="w3-btn w3-brown" type="submit">Save</button>
+    </form>
 </body>
 
 </html>
