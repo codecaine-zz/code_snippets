@@ -1,59 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" class="sl-theme-dark">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/themes/dark.css">
-    <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/shoelace-autoloader.js"></script>
-    <title>Code Snippets</title>
-    <style>
-        .form {
-            width: 50%;
-            margin: 0 auto;
-        }
-
-        sl-input,
-        sl-textarea {
-            margin-bottom: 10px;
-        }
-
-        sl-button {
-            margin-top: 10px;
-        }
-    </style>
-</head>
+<html lang="en">
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
 <style>
-    .form {
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    sl-input,
-    sl-textarea {
-        margin-bottom: 10px;
-    }
-
-    sl-button {
-        margin-top: 10px;
+    textarea {
+        height: 200px;
     }
 </style>
 
 <body>
-    <div class="container">
-        <form class="w3-form w3-auto">
+    <div class="w3-card-4">
+        <div class="w3-container w3-brown">
             <h2>Code Snippet</h2>
-            <sl-input name="language" label="Language"></sl-input>
-            <sl-input name="title" label="Title"></sl-input>
-            <sl-textarea name="code" label="Code"></sl-textarea>
-            <sl-input name="category" label="Category"></sl-input>
-            <sl-textarea name="additional_info" label="Additional Info"></sl-textarea>
-            <sl-button type="submit">Save Snippet</sl-button>
+        </div>
+        <form class="w3-container">
+            <label class="w3-text-brown" for="language"><b>Language</b></label>
+            <input id="language" class="w3-input w3-border w3-sand w3-margin-bottom" name="language" type="text"
+                placeholder="Enter language">
+
+            <label class="w3-text-brown" for="category"><b>Category</b></label>
+            <input id="category" class="w3-input w3-border w3-sand w3-margin-bottom" name="category" type="text"
+                placeholder="Enter category">
+
+            <label class="w3-text-brown" for="title"><b>Title</b></label>
+            <input id="title" class="w3-input w3-border w3-sand w3-margin-bottom" name="title" type="text"
+                placeholder="Enter title">
+
+            <label class="w3-text-brown" for="code"><b>Code</b></label>
+            <textarea id="code" class="w3-input w3-border w3-sand w3-margin-bottom" name="code" type="text"> </textarea>
+
+            <label class="w3-text-brown" for="additional-info"><b>Additional Information</b></label>
+            <textarea id="additional-info" class="w3-input w3-border w3-sand w3-margin-bottom" name="additional-info"
+                type="text" placeholder="Enter additional information"> </textarea>
+            <button class="w3-btn w3-brown" type="submit">Save</button>
         </form>
     </div>
-
 </body>
 
 </html>
