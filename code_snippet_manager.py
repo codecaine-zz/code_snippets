@@ -130,6 +130,18 @@ class CodeSnippetManager:
         self.connection.commit()
         return self.cursor.rowcount > 0
 
+    def delete_all_snippets(self):
+        """
+        Method to delete all the snippets.
+
+        :return: True if the delete was successful, otherwise False.
+        """
+        self.cursor.execute("""
+            DELETE FROM snippets
+        """)
+        self.connection.commit()
+        return self.cursor.rowcount > 0
+
     def list_snippets(self):
         """Method to get a list of all the snippets."""
         self.cursor.execute("""

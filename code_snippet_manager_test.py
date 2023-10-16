@@ -62,6 +62,17 @@ def test_delete_snippet(snippet_manager):
     assert len(snippets) == 0
 
 
+def test_delete_all_snippets(snippet_manager):
+    """Test deleting all the snippets."""
+    snippet_manager.add_snippet('Python', 'Hello World', 'print("Hello, World!")',
+                                'Getting Started', 'A simple program to print "Hello, World!"')
+    snippet_manager.add_snippet('Python', 'Hello World', 'print("Hello, World!")',
+                                'Simple', 'A simple program to print "Hello, World!"')
+    assert snippet_manager.delete_all_snippets()
+    snippets = snippet_manager.list_snippets()
+    assert len(snippets) == 0
+
+
 def test_list_snippets(snippet_manager):
     """Test listing all the snippets."""
     snippet_manager.add_snippet('Python', 'Hello World', 'print("Hello, World!")',
