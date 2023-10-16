@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/themes/dark.css">
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/shoelace-autoloader.js"></script>
+    <title>Code Snippets</title>
+    <style>
+        .form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        sl-input,
+        sl-textarea {
+            margin-bottom: 10px;
+        }
+
+        sl-button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<style>
+    .form {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    sl-input,
+    sl-textarea {
+        margin-bottom: 10px;
+    }
+
+    sl-button {
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form class="w3-form w3-auto">
+            <h2>Code Snippet</h2>
+            <sl-input name="language" label="Language"></sl-input>
+            <sl-input name="title" label="Title"></sl-input>
+            <sl-textarea name="code" label="Code"></sl-textarea>
+            <sl-input name="category" label="Category"></sl-input>
+            <sl-textarea name="additional_info" label="Additional Info"></sl-textarea>
+            <sl-button type="submit">Save Snippet</sl-button>
+        </form>
+    </div>
+
+</body>
+
+</html>

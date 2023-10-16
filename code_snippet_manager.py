@@ -247,6 +247,3 @@ class CodeSnippetManager:
             'category': row[4],
             'additional_info': row[5]
         } for row in rows]
-
-
-# Path: code_snippet_manager_test.py
